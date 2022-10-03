@@ -1,0 +1,189 @@
+{
+  "id": 4,
+  "tittle": "\\text{Resuelva la siguiente ecuación en } \\R .",
+  "description": "",
+  "order_steps": {
+    "show": true,
+    "position": "initial"
+  },
+  "content": "eq",
+  "case": 2,
+  "difficulty": 2,
+  "eqc": "2x^2 +x +2 = 0",
+  "steps": [
+    {
+      "n_step": 0,
+      "left_text": "Identifique los coeficientes de la ecuación (a,b,c): ",
+      "input_labels": "",
+      "correct_answer": 2,
+      "hints": [
+        {
+          "id": 0,
+          "text": "\\text {'c' es el coeficiente que acompaña} \\newline \\text{el término independiente}",
+          "answers": [6],
+          "generic": true
+        },
+        {
+          "id": 1,
+          "text": "\\text {'b' es el coeficiente que acompaña} \\newline \\text{el término lineal}",
+          "answers": [5],
+          "generic": true
+        },
+        {
+          "id": 2,
+          "text": "\\text { 'a' es el coeficiente que acompaña} \\newline \\text{término cuadrático}",
+          "answers": [6],
+          "generic": true
+        },
+        {
+          "id": 3,
+          "text": "\\text {Confundiste los coeficientes de }\\newline \\text{'a' y 'b' }",
+          "answers": [6],
+          "generic": false
+        },
+        {
+          "id": 4,
+          "text": "\\text {Confundiste los coeficientes de }\\newline \\text{'b' y 'c' }",
+          "answers": [4],
+          "generic": false
+        }
+      ],
+      "type": "drag-fixed",
+      "kcs": "",
+      "answers": [
+        {
+          "id": 1,
+          "value": "a=-2, b=1, c=2"
+        },
+        {
+          "id": 2,
+          "value": "a=2, b=1, c=2"
+        },
+        {
+          "id": 3,
+          "value": "a=2, b=-1, c=2"
+        },
+        {
+          "id": 4,
+          "value": "a=2, b=2, c=1"
+        },
+        {
+          "id": 5,
+          "value": "a=2, b=1, c=-2"
+        },
+        {
+          "id": 6,
+          "value": "a=1, b=2, c=2"
+        }
+      ]
+    },
+    {
+      "n_step": 1,
+      "left_text": "Calcule el discriminante de la ecuación: ",
+      "input_labels": "b^2 -4ac = ",
+      "correct_answer": -15,
+      "hints": [
+        {
+          "id": 0,
+          "text": "\\text {Confundiste los índices de b y c } \\newline \\text{en la fórmula}",
+          "answers": [-4],
+          "generic": false
+        },
+        {
+          "id": 1,
+          "text": "\\text {Reemplaza los términos 'a', 'b', 'c'} \\newline \\text{que encontraste en el paso anterior}",
+          "answers": [5, 3],
+          "generic": true
+        },
+        {
+          "id": 2,
+          "text": "\\text {Estás aplicando incorrectamente } \\newline \\text{la fórmula mira cuidadosamente } \\newline \\text{los índices calculados anteriormente}",
+          "answers": [19],
+          "generic": true
+        },
+        {
+          "id": 3,
+          "text": "\\text {Recuerda que el segundo término}\\newline \\text{para calcular el discriminante es -4ac}",
+          "answers": [-3],
+          "generic": false
+        }
+      ],
+      "type": "input",
+      "kcs": "",
+      "answers": [
+        {
+          "id": 1,
+          "value": "-16"
+        },
+        {
+          "id": 2,
+          "value": "-7"
+        },
+        {
+          "id": 3,
+          "value": "16"
+        },
+        {
+          "id": 4,
+          "value": "7"
+        },
+        {
+          "id": 5,
+          "value": "15"
+        },
+        {
+          "id": 6,
+          "value": "-15"
+        }
+      ]
+    },
+    {
+      "n_step": 2,
+      "left_text": "Indique qué tipo de soluciones tiene la ecuación: ",
+      "input_labels": "",
+      "correct_answer": 3,
+      "hints": [
+        {
+          "id": 0,
+          "text": "\\text {Recuerda que el tipo de solución} \\newline \\text{depende del valor del discriminante}",
+          "answers": [2],
+          "generic": true
+        },
+        {
+          "id": 1,
+          "text": "\\text {Si Δ=0 la ecuación tiene una } \\newline \\text{solución real}",
+          "answers": [2, 1],
+          "generic": false
+        },
+        {
+          "id": 2,
+          "text": "\\text {Si Δ>0 la ecuación tiene dos} \\newline \\text{soluciones reales distintas}",
+          "answers": [2, 1],
+          "generic": false
+        },
+        {
+          "id": 3,
+          "text": "\\text {Si Δ<0 la ecuación no tiene} \\newline \\text{solución real}",
+          "answers": [2, 1],
+          "generic": false
+        }
+      ],
+      "type": "drag-text",
+      "kcs": "",
+      "answers": [
+        {
+          "id": 1,
+          "value": "\\text{Dos soluciones reales distintas}"
+        },
+        {
+          "id": 2,
+          "value": "\\text{Una solución real}"
+        },
+        {
+          "id": 3,
+          "value": "\\text{Sin solución real}"
+        }
+      ]
+    }
+  ]
+}

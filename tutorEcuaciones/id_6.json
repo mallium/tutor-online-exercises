@@ -1,0 +1,315 @@
+{
+  "id": 6,
+  "tittle": "\\text{Resuelva la siguiente ecuación en } \\R .",
+  "description": "",
+  "order_steps": {
+    "show": true,
+    "position": "initial"
+  },
+  "content": "eq",
+  "case": 3,
+  "difficulty": 2,
+  "eqc": "9x^2 +6x +1 = 0",
+  "steps": [
+    {
+      "n_step": 0,
+      "left_text": "Identifique los coeficientes de la ecuación (a,b,c): ",
+      "input_labels": "",
+      "correct_answer": 4,
+      "hints": [
+        {
+          "id": 0,
+          "text": "\\text {'c' es el coeficiente que acompaña} \\newline \\text{el término independiente}",
+          "answers": [3],
+          "generic": true
+        },
+        {
+          "id": 1,
+          "text": "\\text {'b' es el coeficiente que acompaña} \\newline \\text{el término lineal}",
+          "answers": [5, 2],
+          "generic": true
+        },
+        {
+          "id": 2,
+          "text": "\\text { 'a' es el coeficiente que acompaña} \\newline \\text{término cuadrático}",
+          "answers": [2],
+          "generic": true
+        },
+        {
+          "id": 3,
+          "text": "\\text {Confundiste los coeficientes de }\\newline \\text{'a' y 'b' }",
+          "answers": [3],
+          "generic": false
+        },
+        {
+          "id": 4,
+          "text": "\\text {Confundiste los coeficientes de }\\newline \\text{'a' y 'c' }",
+          "answers": [1],
+          "generic": false
+        }
+      ],
+      "type": "drag-fixed",
+      "kcs": "",
+      "answers": [
+        {
+          "id": 1,
+          "value": "a=1, b=6, c=9"
+        },
+        {
+          "id": 2,
+          "value": "a=9, b=1, c=6"
+        },
+        {
+          "id": 3,
+          "value": "a=6, b=9, c=1"
+        },
+        {
+          "id": 4,
+          "value": "a=9, b=6, c=1"
+        },
+        {
+          "id": 5,
+          "value": "a=1, b=9, c=6"
+        },
+        {
+          "id": 6,
+          "value": "a=6, b=1, c=9"
+        }
+      ]
+    },
+    {
+      "n_step": 1,
+      "left_text": "Calcule el discriminante de la ecuación: ",
+      "input_labels": "b^2 -4ac = ",
+      "correct_answer": 2,
+      "hints": [
+        {
+          "id": 0,
+          "text": "\\text {Confundiste los índices de a y b } \\newline \\text{en la fórmula}",
+          "answers": [57],
+          "generic": false
+        },
+        {
+          "id": 1,
+          "text": "\\text {Reemplaza los términos 'a', 'b', 'c'} \\newline \\text{que encontraste en el paso anterior}",
+          "answers": [1],
+          "generic": true
+        },
+        {
+          "id": 2,
+          "text": "\\text {Estás aplicando incorrectamente } \\newline \\text{la fórmula mira cuidadosamente } \\newline \\text{los índices calculados anteriormente}",
+          "answers": [19],
+          "generic": true
+        },
+        {
+          "id": 3,
+          "text": "\\text {Recuerda que el segundo término}\\newline \\text{para calcular el discriminante es -4ac}",
+          "answers": [27],
+          "generic": false
+        }
+      ],
+      "type": "input",
+      "kcs": "",
+      "answers": [
+        {
+          "id": 1,
+          "value": "6"
+        },
+        {
+          "id": 2,
+          "value": "0"
+        },
+        {
+          "id": 3,
+          "value": "-6"
+        },
+        {
+          "id": 4,
+          "value": "4"
+        },
+        {
+          "id": 5,
+          "value": "-4"
+        },
+        {
+          "id": 6,
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "n_step": 2,
+      "left_text": "Indique qué tipo de soluciones tiene la ecuación: ",
+      "input_labels": "",
+      "correct_answer": 2,
+      "hints": [
+        {
+          "id": 0,
+          "text": "\\text {Recuerda que el tipo de solución} \\newline \\text{depende del valor del discriminante}",
+          "answers": [1],
+          "generic": true
+        },
+        {
+          "id": 1,
+          "text": "\\text {Si Δ=0 la ecuación tiene una } \\newline \\text{solución real}",
+          "answers": [1, 3],
+          "generic": false
+        },
+        {
+          "id": 2,
+          "text": "\\text {Si Δ>0 la ecuación tiene dos} \\newline \\text{soluciones reales distintas}",
+          "answers": [1, 3],
+          "generic": false
+        },
+        {
+          "id": 3,
+          "text": "\\text {Si Δ<0 la ecuación no tiene} \\newline \\text{solución real}",
+          "answers": [1, 3],
+          "generic": false
+        }
+      ],
+      "type": "drag-text",
+      "kcs": "",
+      "answers": [
+        {
+          "id": 1,
+          "value": "\\text{Dos soluciones reales distintas}"
+        },
+        {
+          "id": 2,
+          "value": "\\text{Una solución real}"
+        },
+        {
+          "id": 3,
+          "value": "\\text{Sin solución real}"
+        }
+      ]
+    },
+    {
+      "n_step": 3,
+      "left_text": "Calcule la primera raíz de la ecuación: ",
+      "input_labels": "x_1 = ",
+      "correct_answer": 2,
+      "hints": [
+        {
+          "id": 0,
+          "text": "\\text {Utiliza la fórmula} {x = \\frac {-b - \\sqrt {b^2 - 4ac}}{2a}}",
+          "answers": [1, 3, 4, 5, 6],
+          "generic": true
+        },
+        {
+          "id": 1,
+          "text": "\\text {Ya calculaste el discriminante y} \\newline \\text{los coeficientes simplemente } \\newline \\text{reemplaza en la fórmula.}",
+          "answers": [5],
+          "generic": true
+        },
+        {
+          "id": 2,
+          "text": "\\text { Al utilizar la fórmula recuerda que el } \\newline \\text{denominador es 2a}",
+          "answers": [6],
+          "generic": false
+        },
+        {
+          "id": 3,
+          "text": "\\text {Al utilizar la fórmula recuerda que el }\\newline \\text{coeficiente de b es negativo }",
+          "answers": [3],
+          "generic": false
+        }
+      ],
+      "type": "drag-fixed",
+      "kcs": "",
+      "answers": [
+        {
+          "id": 1,
+          "value": "2/3"
+        },
+        {
+          "id": 2,
+          "value": "-1/3"
+        },
+        {
+          "id": 3,
+          "value": "1/3"
+        },
+        {
+          "id": 4,
+          "value": "1/2"
+        },
+        {
+          "id": 5,
+          "value": "-1/2"
+        },
+        {
+          "id": 6,
+          "value": "-2/3"
+        }
+      ]
+    },
+    {
+      "n_step": 4,
+      "left_text": "Calcule la segunda raíz de la ecuación: ",
+      "input_labels": "x_2 = ",
+      "correct_answer": 5,
+      "hints": [
+        {
+          "id": 0,
+          "text": "\\text {Utiliza la fórmula} {x = \\frac {-b - \\sqrt {b^2 - 4ac}}{2a}}",
+          "answers": [1, 2, 3, 4, 6],
+          "generic": true
+        },
+        {
+          "id": 1,
+          "text": "\\text {Recuerda el tipo de solución que }\\newline \\text{tiene la ecuación}",
+          "answers": [2],
+          "generic": true
+        },
+        {
+          "id": 2,
+          "text": "\\text {Ya calculaste el discriminante y} \\newline \\text{los coeficientes simplemente } \\newline \\text{reemplaza en la fórmula.}",
+          "answers": [5],
+          "generic": true
+        },
+        {
+          "id": 3,
+          "text": "\\text { Al utilizar la fórmula recuerda que el } \\newline \\text{denominador es 2a}",
+          "answers": [6],
+          "generic": false
+        },
+        {
+          "id": 4,
+          "text": "\\text {Al utilizar la fórmula recuerda que el }\\newline \\text{coeficiente de b es negativo }",
+          "answers": [4],
+          "generic": false
+        }
+      ],
+      "type": "drag-fixed",
+      "kcs": "",
+      "answers": [
+        {
+          "id": 1,
+          "value": "-1/2"
+        },
+        {
+          "id": 2,
+          "value": "1/2"
+        },
+        {
+          "id": 3,
+          "value": "2/3"
+        },
+        {
+          "id": 4,
+          "value": "1/3"
+        },
+        {
+          "id": 5,
+          "value": "-1/3"
+        },
+        {
+          "id": 6,
+          "value": "-2/3"
+        }
+      ]
+    }
+  ]
+}

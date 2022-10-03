@@ -1,0 +1,218 @@
+{
+  "id": 7,
+  "tittle": "\\text{Resolve el siguiente sistema de ecuaciones}",
+  "description": "",
+  "order_steps": {
+    "show": false,
+    "position": "initial"
+  },
+  "content": "sys_eq",
+  "difficulty": 1,
+  "eqc": "3x -y +6 = 0 \\enspace (1) \\atop -2x+4y=4 \\enspace (2)",
+  "steps": [
+    {
+      "n_step": 0,
+      "left_text": "Despeja 'y' en ecuación (1) ",
+      "input_labels": "y= ",
+      "correct_answer": 1,
+      "hints": [
+        {
+          "id": 0,
+          "text": "\\text {Suma en ambos lados 'y'} \\newline \\text{para despejar la variable}",
+          "answers": [4],
+          "generic": true
+        },
+        {
+          "id": 1,
+          "text": "\\text {Mira con cuidado el signo} \\newline \\text{de 'y'}",
+          "answers": [2],
+          "generic": false
+        },
+        {
+          "id": 2,
+          "text": "\\text {Estas confundiendo el término} \\newline \\text{lineal con el constante}",
+          "answers": [5],
+          "generic": false
+        }
+      ],
+      "type": "drag-fixed",
+      "kcs": "",
+      "answers": [
+        {
+          "id": 1,
+          "value": "3x+6"
+        },
+        {
+          "id": 2,
+          "value": "-3x-6"
+        },
+        {
+          "id": 3,
+          "value": "6-3x"
+        },
+        {
+          "id": 4,
+          "value": "6x-3"
+        },
+        {
+          "id": 5,
+          "value": "6x+3"
+        },
+        {
+          "id": 6,
+          "value": "2x+6"
+        }
+      ]
+    },
+    {
+      "n_step": 1,
+      "left_text": "Reemplaza 'y' en la ecuación (2) ",
+      "input_labels": "",
+      "correct_answer": [2, 4],
+      "hints": [
+        {
+          "id": 0,
+          "text": "\\text {Ya calculaste 'y' en el paso anterior} \\newline \\text{simplemente reemplazalo en la} \\newline \\text{ecuación (2)}",
+          "answers": [1],
+          "generic": true
+        },
+        {
+          "id": 1,
+          "text": "\\text {Te equivocaste reemplazaste el valor de 'y' en 'x'}",
+          "answers": [5],
+          "generic": false
+        },
+        {
+          "id": 2,
+          "text": "\\text {Fijate en el termino constante} \\newline \\text{de la ecuación (2)}",
+          "answers": [3, 1],
+          "generic": false
+        }
+      ],
+      "type": "drag-fixed-two",
+      "kcs": "",
+      "answers": [
+        {
+          "id": 1,
+          "value": "3"
+        },
+        {
+          "id": 2,
+          "value": "4"
+        },
+        {
+          "id": 3,
+          "value": "2"
+        },
+        {
+          "id": 4,
+          "value": "-2x+4(3x+6)"
+        },
+        {
+          "id": 5,
+          "value": "-2(3x+6)+4y"
+        },
+        {
+          "id": 6,
+          "value": "-6x+6(3x+6)"
+        }
+      ]
+    },
+    {
+      "n_step": 2,
+      "left_text": "Simplifica 'x' en el paso anterior",
+      "input_labels": "",
+      "correct_answer": [3, 4],
+      "hints": [
+        {
+          "id": 0,
+          "text": "\\text {Primero usa la propiedad distributiva} \\newline {en 4(3x+6)}",
+          "answers": [7],
+          "generic": true
+        },
+        {
+          "id": 1,
+          "text": "\\text {Luego de distribuir te queda} \\newline {-2x+12x+24=4}",
+          "answers": [7],
+          "generic": true
+        },
+        {
+          "id": 2,
+          "text": "\\text {Simplifica las 'x' y las constantes}",
+          "answers": [7],
+          "generic": true
+        }
+      ],
+      "type": "drag-fixed-two",
+      "kcs": "",
+      "answers": [
+        {
+          "id": 1,
+          "value": "12x"
+        },
+        {
+          "id": 2,
+          "value": "-10x"
+        },
+        {
+          "id": 3,
+          "value": "-20"
+        },
+        {
+          "id": 4,
+          "value": "10x"
+        },
+        {
+          "id": 5,
+          "value": "-5"
+        },
+        {
+          "id": 6,
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "n_step": 3,
+      "left_text": "Calcula 'x' ",
+      "input_labels": "x = ",
+      "correct_answer": -2,
+      "hints": [
+        {
+          "id": 0,
+          "text": "\\text {En el paso anterior ya simplificaste 'x'} \\newline \\text{ahora despeja 'x'}",
+          "answers": [2, 1],
+          "generic": true
+        },
+        {
+          "id": 1,
+          "text": "\\text {Divide ambos lados por 10}",
+          "answers": [555, 777],
+          "generic": true
+        }
+      ],
+      "type": "input"
+    },
+    {
+      "n_step": 4,
+      "left_text": "Calcula 'y' sustituyendo el valor de 'x'",
+      "input_labels": "y = ",
+      "correct_answer": 0,
+      "hints": [
+        {
+          "id": 0,
+          "text": "\\text {En el paso 0 calculaste que} \\newline {y=3x+6}",
+          "answers": [77787],
+          "generic": true
+        },
+        {
+          "id": 1,
+          "text": "\\text {Ahora reemplaza el valor de} \\newline {x=-2}",
+          "answers": [6667],
+          "generic": true
+        }
+      ],
+      "type": "input"
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "id": 13,
+  "tittle": "\\text{Resuelva la siguiente ecuación en } \\R .",
+  "description": "",
+  "order_steps": {
+    "show": true,
+    "position": "initial"
+  },
+  "content": "eq",
+  "case": 2,
+  "difficulty": 2,
+  "eqc": "3x^2 +2x +7 = 0",
+  "steps": [
+    {
+      "n_step": 0,
+      "left_text": "Identifique los coeficientes de la ecuación (a,b,c): ",
+      "input_labels": "",
+      "correct_answer": 1,
+      "hints": [
+        {
+          "id": 0,
+          "text": "\\text {Estas por buen camino chekea con} \\newline \\text{cuidado el signo de tu alternativa}",
+          "answers": [2, 1],
+          "generic": false
+        },
+        {
+          "id": 1,
+          "text": "\\text {Los signos de  a y b} \\newline \\text{cuidado el signo de tu alternativa}",
+          "answers": [5, 3],
+          "generic": false
+        },
+        {
+          "id": 2,
+          "text": "\\text { 'a' es el coeficiente que acompaña} \\newline \\text{término cuadrático}",
+          "answers": [2],
+          "generic": true
+        },
+        {
+          "id": 3,
+          "text": "\\text {Para determinar 'a' fijate en el}\\newline \\text{coeficiente de } x^2",
+          "answers": [3],
+          "generic": true
+        },
+        {
+          "id": 4,
+          "text": "\\text {El coeficiente 'a' es 1, el b es -5 y} \\newline \\text{'c' es 6}",
+          "answers": [2],
+          "generic": true
+        }
+      ],
+      "type": "drag-fixed",
+      "kcs": "",
+      "answers": [
+        {
+          "id": 1,
+          "value": "a=3, b=2, c=7"
+        },
+        {
+          "id": 2,
+          "value": "a=7, b=2, c=3"
+        },
+        {
+          "id": 3,
+          "value": "a=2, b=3, c=7"
+        },
+        {
+          "id": 4,
+          "value": "a=3, b=7, c=2"
+        },
+        {
+          "id": 5,
+          "value": "a=7, b=3, c=2"
+        },
+        {
+          "id": 6,
+          "value": "a=2, b=7, c=3"
+        }
+      ]
+    },
+    {
+      "n_step": 1,
+      "left_text": "Calcule el discriminante de la ecuación: ",
+      "input_labels": "b^2 -4ac = ",
+      "correct_answer": 3,
+      "hints": [
+        {
+          "id": 0,
+          "text": "\\text {Estas por buen camino chekea con} \\newline \\text{cuidado el signo de tu alternativa}",
+          "answers": [2, 1],
+          "generic": false
+        },
+        {
+          "id": 1,
+          "text": "\\text {Los signos de  a y b} \\newline \\text{cuidado el signo de tu alternativa}",
+          "answers": [5, 3],
+          "generic": false
+        },
+        {
+          "id": 2,
+          "text": "\\text { 'a' es el coeficiente que acompaña} \\newline \\text{término cuadrático}",
+          "answers": [2],
+          "generic": true
+        },
+        {
+          "id": 3,
+          "text": "\\text {Para determinar 'a' fijate en el}\\newline \\text{coeficiente de } x^2",
+          "answers": [3],
+          "generic": true
+        },
+        {
+          "id": 4,
+          "text": "\\text {El coeficiente 'a' es 1, el b es -5 y} \\newline \\text{'c' es 6}",
+          "answers": [2],
+          "generic": true
+        }
+      ],
+      "type": "drag-fixed",
+      "kcs": "",
+      "answers": [
+        {
+          "id": 1,
+          "value": "80"
+        },
+        {
+          "id": 2,
+          "value": "-24"
+        },
+        {
+          "id": 3,
+          "value": "-80"
+        },
+        {
+          "id": 4,
+          "value": "24"
+        },
+        {
+          "id": 5,
+          "value": "52"
+        },
+        {
+          "id": 6,
+          "value": "-52"
+        }
+      ]
+    },
+    {
+      "n_step": 2,
+      "left_text": "Indique qué tipo de soluciones tiene la ecuación: ",
+      "input_labels": "",
+      "correct_answer": 3,
+      "hints": [
+        {
+          "id": 0,
+          "text": "\\text {Estas por buen camino chekea con} \\newline \\text{cuidado el signo de tu alternativa}",
+          "answers": [2, 1],
+          "generic": false
+        },
+        {
+          "id": 1,
+          "text": "\\text {Los signos de  a y b} \\newline \\text{cuidado el signo de tu alternativa}",
+          "answers": [5, 3],
+          "generic": false
+        },
+        {
+          "id": 2,
+          "text": "\\text { 'a' es el coeficiente que acompaña} \\newline \\text{término cuadrático}",
+          "answers": [2],
+          "generic": true
+        },
+        {
+          "id": 3,
+          "text": "\\text {Para determinar 'a' fijate en el}\\newline \\text{coeficiente de } x^2",
+          "answers": [3],
+          "generic": true
+        },
+        {
+          "id": 4,
+          "text": "\\text {El coeficiente 'a' es 1, el b es -5 y} \\newline \\text{'c' es 6}",
+          "answers": [2],
+          "generic": true
+        }
+      ],
+      "type": "drag-text",
+      "kcs": "",
+      "answers": [
+        {
+          "id": 1,
+          "value": "\\text{Dos soluciones reales distintas}"
+        },
+        {
+          "id": 2,
+          "value": "\\text{Una solución real}"
+        },
+        {
+          "id": 3,
+          "value": "\\text{Sin solución real}"
+        }
+      ]
+    }
+  ]
+}
