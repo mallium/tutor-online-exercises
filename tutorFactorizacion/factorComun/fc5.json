@@ -1,0 +1,45 @@
+{
+  "code": "fc5",
+  "title": "Factor común",
+  "contentType": "FC",
+  "level": "4",
+  "text": "Factorizar la siguiente expresión:",
+  "selectSteps": true,
+  "steps": [
+    {
+      "stepId": 0,
+      "expression": "\\frac{x^{20}}{20} + \\frac{x^{10}}{10} - \\frac{x^5}{5}",
+      "stepTitle": "Ingresar factor común: ",
+      "displayResult": "(\\frac{x^{15}}{4} + \\frac{x^5}{2} - 1)",
+      "KCs": [1],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Identificar los factores que se repitan en cada sumando de la expresión."
+        },
+        {
+          "hintId": 1,
+          "hint": "Un factor común es 1/5, pero la expresión todavía es factorizable."
+        },
+        { "hintId": 2, "hint": "El factor común de la expresión es x^5/5." }
+      ],
+      "matchingError": [
+        { "error": [""], "hintId": 3, "hint": "No ha ingresado respuesta" },
+        {
+          "error": ["x^5"],
+          "hintId": 4,
+          "hint": "un factor común es x^5, pero no es el máximo factor común"
+        }
+      ],
+      "answers": [
+        { "answer": "\\frac{x^5}{5}", "nextStep": null },
+        { "answer": "x^5/5", "nextStep": null },
+        { "answer": "(x^5)/5", "nextStep": null },
+        { "answer": "(x^5)/(5)", "nextStep": null }
+      ],
+      "incorrectMsg": "Factor común incorrecto, ingrese el factor común correspondiente a la expresión dada",
+      "correctMsg": "Has encontrado el factor común",
+      "summary": "El factor común es el término que se encuentra en cada sumando y se puede factorizar. Así, la expresión puede ser representada por la multiplicación entre su factor común y nuevos sumandos. La nueva representación queda: "
+    }
+  ]
+}

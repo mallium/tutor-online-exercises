@@ -1,0 +1,190 @@
+{
+  "code": "tc2",
+  "title": "Trinomios cuadráticos.",
+  "contentType": "TC",
+  "level": "1",
+  "text": "Factorice la expresión de la forma: a(x - x₁)(x - x₂)",
+  "selectSteps": true,
+  "steps": [
+    {
+      "stepId": "1",
+      "expression": "x^2+8x+12",
+      "stepTitle": "Identificar coeficientes a, b y c",
+      "displayResult": "a=1, b=8, c=12",
+      "KCs": [4],
+      "hints": [
+        { "hintId": 0, "hint": "El valor de a es el coeficiente de x^2" },
+        { "hintId": 1, "hint": "El valor de a es 1" },
+        { "hintId": 2, "hint": "a =1, b=8, c=12" }
+      ],
+      "matchingError": [
+        {
+          "error": ["", "", ""],
+          "hintId": 3,
+          "hint": "No ha ingresado respuesta"
+        },
+        {
+          "error": ["", "*", "*"],
+          "hintId": 4,
+          "hint": "No ha ingresado el valor de a"
+        },
+        {
+          "error": ["*", "", "*"],
+          "hintId": 5,
+          "hint": "No ha ingresado el valor de b"
+        },
+        {
+          "error": ["*", "*", ""],
+          "hintId": 6,
+          "hint": "No ha ingresado el valor de c"
+        }
+      ],
+      "answers": [{ "answer": ["1", "8", "12"], "nextStep": "1" }],
+      "incorrectMsg": "no son los valores correspondientes a los valores a, b y c",
+      "correctMsg": "Haz identificado los valores de a, b y c",
+      "summary": "1) Para factorizar la expresión de la forma a(x - x₁)(x - x₂), es necesario determinar los valores de a, x₁ y x₂. Donde x₁, x₂ son las soluciones de la ecuación ax² + bx + c = 0. Por lo tanto, para llevar a cabo esta factorización, se debe identificar los valores de a, b y c."
+    },
+    {
+      "stepId": "1",
+      "expression": "a=1, b=8, c=12",
+      "stepTitle": "Calcular discriminante Δ = b²-4ac",
+      "displayResult": "Δ=b²-4ac=8²-4*1*12=16",
+      "KCs": [5],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Utilice la fórmula para calcular Δ usando los coeficientes de la expresión cuadrática"
+        },
+        {
+          "hintId": 1,
+          "hint": "reemplace en la fórmula Δ por: a=1, b=8 y c=12"
+        },
+        { "hintId": 2, "hint": "El valor del discriminante es 16" }
+      ],
+      "matchingError": [
+        { "error": [""], "hintId": 3, "hint": "No ha ingresado respuesta" }
+      ],
+      "answers": [{ "answer": "16", "nextStep": "2" }],
+      "incorrectMsg": "no se han ingresado correctamente el discriminante de la expresión",
+      "correctMsg": "Haz calculado correctamente el discriminante",
+      "summary": "2) Ya con los valores de a, b y c se puede calcular x₁ y x₂ con la fórmula x₁ = (-b + √Δ)/2a, x₂ = (-b - √Δ)/2a. Entonces es necesario calcular el discriminante Δ=b²-4ac"
+    },
+    {
+      "stepId": "2",
+      "expression": "Δ=16",
+      "stepTitle": "¿A qué caso corresponde el discriminante?",
+      "displayResult": "Δ>0, por lo tanto este ejercicio posee dos raices reales diferentes",
+      "KCs": [6],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Recuerda que el discriminante determina si el trinomio tiene soluciones"
+        },
+        {
+          "hintId": 1,
+          "hint": "Como el determinante es mayor a cero, ver a qué caso corresponde"
+        },
+        {
+          "hintId": 2,
+          "hint": "Δ>0, por lo tanto este ejercicio posee dos raices reales diferentes"
+        }
+      ],
+      "matchingError": [
+        {
+          "error": ["*"],
+          "hintId": 3,
+          "hint": "Debe seleccionar la alternativa correcta"
+        }
+      ],
+      "answers": [{ "answer": "1", "nextStep": "3" }],
+      "incorrectMsg": "caso mal ingresado",
+      "correctMsg": "Haz descubierto a que caso corresponde el discriminante",
+      "summary": "3) Si Δ>0 posee dos raices reales diferentes, si Δ=0 posee dos raices reales iguales y Δ<0 posee raices complejas conjugadas, aquí:"
+    },
+    {
+      "stepId": "3",
+      "expression": "Δ = 16, a = 1, b = 8 ",
+      "stepTitle": "Calcular raíces x₁ = (-b + √Δ)/2a, x₂ = (-b - √Δ)/2a ",
+      "formula": [
+        "x_{1}=\\frac{-b+\\sqrt{Δ}}{2a}",
+        "x_{2}=\\frac{-b-\\sqrt{Δ}}{2a}"
+      ],
+      "displayResult": "x_{1}=-2, x_{2}=-6",
+      "KCs": [7],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Reemplace los valores de a, b y Δ en la fórmula para calcular x₁ y x₂"
+        },
+        { "hintId": 1, "hint": "x1=-2" },
+        { "hintId": 2, "hint": "El valor de x1=-2 y x2=-6" }
+      ],
+      "matchingError": [
+        {
+          "error": ["", ""],
+          "hintId": 3,
+          "hint": "No ha ingresado las raices"
+        },
+        {
+          "error": ["", "*"],
+          "hintId": 4,
+          "hint": "No ha ingresado la raíz x₁"
+        },
+        {
+          "error": ["*", ""],
+          "hintId": 5,
+          "hint": "No ha ingresado la raíz x₂"
+        }
+      ],
+      "answers": [{ "answer": ["-2", "-6"], "nextStep": "4" }],
+      "incorrectMsg": "raices mal ingresadas",
+      "correctMsg": "Haz encontrado las raices del polinomio",
+      "summary": "4) Obtenidos los valores de a, b y Δ se puede calcular x₁= (-b + √Δ)/2a y x₂= (-b - √Δ)/2a, entonces:"
+    },
+    {
+      "stepId": "4",
+      "expression": "x_{1}=-2, x_{2}=-6",
+      "stepTitle": "Factorizar de la forma a(x - x₁)(x - x₂)",
+      "displayResult": "1(x+2)(x+6)",
+      "KCs": [8],
+      "hints": [
+        { "hintId": 0, "hint": "reemplazar el primer factor por x-x₁" },
+        {
+          "hintId": 1,
+          "hint": "Un factor es x-x₁, entonces el valor a ingresar x+2"
+        },
+        { "hintId": 2, "hint": "1(x+2)(x+6)" }
+      ],
+      "matchingError": [
+        {
+          "error": ["", "", ""],
+          "hintId": 3,
+          "hint": "No ha ingresado respuesta"
+        },
+        { "error": ["", "*", "*"], "hintId": 4, "hint": "No ha ingresado a" },
+        {
+          "error": ["*", "", "*"],
+          "hintId": 5,
+          "hint": "No ha ingresado x - x₁"
+        },
+        {
+          "error": ["*", "*", ""],
+          "hintId": 6,
+          "hint": "No ha ingresado x - x₂"
+        }
+      ],
+      "answers": [
+        {
+          "answer": [
+            ["1", "x+2", "x+6"],
+            ["1", "x+6", "x+2"]
+          ],
+          "nextStep": null
+        }
+      ],
+      "incorrectMsg": "error en la factorización",
+      "correctMsg": "Haz completado la factorización de trinomios cuadráticos correctamente",
+      "summary": "5) Se completa la factorización de trinomios cuadráticos de la forma a(x-x₁)(x-x₂)"
+    }
+  ]
+}

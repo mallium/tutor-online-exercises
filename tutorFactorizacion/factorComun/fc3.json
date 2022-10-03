@@ -1,0 +1,47 @@
+{
+  "code": "fc3",
+  "title": "Factor común",
+  "contentType": "FC",
+  "level": "3",
+  "text": "Factorizar la siguiente expresión:",
+  "selectSteps": true,
+  "steps": [
+    {
+      "stepId": 0,
+      "expression": "\\frac{5x^6}{3y^2} - \\frac{10x^2}{21y}- \\frac{20x^3}{9y^4}",
+      "stepTitle": "Ingresar factor común: ",
+      "displayResult": "( \\frac{x^4}{y} - \\frac{2}{7} - \\frac{4x}{3y^3} )",
+      "KCs": [1],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Identificar los factores que se repitan en cada sumando de la expresión."
+        },
+        {
+          "hintId": 1,
+          "hint": "Un factor común es 5x/3, pero la expresión todavía es factorizable."
+        },
+        {
+          "hintId": 2,
+          "hint": "El factor común de la expresión es (5x^2)/(3y)."
+        }
+      ],
+      "matchingError": [
+        { "error": [""], "hintId": 3, "hint": "No ha ingresado respuesta" },
+        {
+          "error": ["5/3"],
+          "hintId": 4,
+          "hint": "un factor común es 5/3, pero no es el máximo factor común"
+        }
+      ],
+      "answers": [
+        { "answer": "\\frac{5x^2}{3y}", "nextStep": null },
+        { "answer": "(5x^2)/(3y)", "nextStep": null },
+        { "answer": "5x^2/(3y)", "nextStep": null }
+      ],
+      "incorrectMsg": "Factor común incorrecto, ingrese el factor común correspondiente a la expresión dada",
+      "correctMsg": "Has encontrado el factor común",
+      "summary": "El factor común es el término que se encuentra en cada sumando y se puede factorizar. Así, la expresión puede ser representada por la multiplicación entre su factor común y nuevos sumandos. La nueva representación queda: "
+    }
+  ]
+}

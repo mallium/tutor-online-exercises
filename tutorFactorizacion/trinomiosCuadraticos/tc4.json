@@ -1,0 +1,105 @@
+{
+  "code": "tc4",
+  "title": "Trinomios cuadráticos.",
+  "contentType": "TC",
+  "level": "4",
+  "text": "Factorice la expresión de la forma: a(x - x₁)(x - x₂)",
+  "selectSteps": true,
+  "steps": [
+    {
+      "KCs": [4],
+      "hints": [
+        { "hint": "El valor de a es el coeficiente de x²", "hintId": 0 },
+        { "hint": "El valor de b es -2", "hintId": 1 },
+        { "hint": "a =1, b=-2, c=5", "hintId": 2 }
+      ],
+      "stepId": "0",
+      "answers": [{ "answer": ["1", "-2", "5"], "nextStep": "2" }],
+      "summary": "1) Para factorizar la expresión de la forma a(x - x₁)(x - x₂), es necesario determinar los valores de a, x₁ y x₂. Donde x₁, x₂ son las soluciones de la ecuación ax² + bx + c = 0. Por lo tanto, para llevar a cabo esta factorización, se debe identificar los valores de a, b y c.",
+      "stepTitle": "Identificar coeficientes a, b y c",
+      "correctMsg": "Haz identificado los valores de a, b y c",
+      "expression": "x^2-2x+5",
+      "incorrectMsg": "no son los valores correspondientes a los valores a, b y c",
+      "displayResult": "a=1, b=-2, c=5",
+      "matchingError": [
+        {
+          "hint": "No ha ingresado respuesta",
+          "error": ["", "", ""],
+          "hintId": 3
+        },
+        {
+          "hint": "No ha ingresado el valor de a",
+          "error": ["", "*", "*"],
+          "hintId": 4
+        },
+        {
+          "hint": "No ha ingresado el valor de b",
+          "error": ["*", "", "*"],
+          "hintId": 5
+        },
+        {
+          "hint": "No ha ingresado el valor de c",
+          "error": ["*", "*", ""],
+          "hintId": 6
+        }
+      ]
+    },
+    {
+      "KCs": [5],
+      "hints": [
+        {
+          "hint": "Utilice la fórmula para calcular Δ usando los coeficientes de la expresión cuadrática",
+          "hintId": 0
+        },
+        {
+          "hint": "Reemplace en la fórmula Δ los valores de: a=1, b=-2 y c=5",
+          "hintId": 1
+        },
+        { "hint": "El valor del discriminante (Δ) es -16", "hintId": 2 }
+      ],
+      "stepId": "1",
+      "answers": [{ "answer": "-16", "nextStep": "3" }],
+      "summary": "2) Ya con los valores de a, b y c se puede calcular x₁ y x₂ con la fórmula x₁ = (-b + √Δ)/2a, x₂ = (-b - √Δ)/2a. Entonces es necesario calcular el discriminante Δ=b²-4ac",
+      "stepTitle": "Calcular discriminante  Δ = b² - 4ac",
+      "correctMsg": "Haz calculado correctamente el discriminante",
+      "expression": "a=5, b=4, c=-1",
+      "incorrectMsg": "no se han ingresado correctamente el discriminante de la expresión",
+      "displayResult": "Δ=-16",
+      "matchingError": [
+        { "hint": "No ha ingresado respuesta", "error": [""], "hintId": 3 }
+      ]
+    },
+    {
+      "KCs": [6],
+      "hints": [
+        {
+          "hint": "Recuerda que el discriminante determina si el trinomio tiene soluciones",
+          "hintId": 0
+        },
+        {
+          "hint": "Como el determinante es menor a cero, ver a qué caso corresponde",
+          "hintId": 1
+        },
+        {
+          "hint": "Δ<0, por lo tanto este ejercicio posee dos raices complejas conjugadas",
+          "hintId": 2
+        }
+      ],
+      "stepId": "2",
+      "answers": [{ "answer": "3", "nextStep": null }],
+      "summary": "3) Si Δ>0 posee dos raices reales diferentes, si Δ=0 posee dos raices reales iguales y Δ<0 posee raices complejas conjugadas, aquí:",
+      "stepTitle": "¿A qué caso corresponde el discriminante?",
+      "correctMsg": "Haz descubierto a que caso corresponde el discriminante. Sin embargo, este ejercicio se resuelve con valores complejos",
+      "expression": "Δ=-16",
+      "incorrectMsg": "caso mal ingresado",
+      "displayResult": "Δ<0, por lo tanto este ejercicio posee dos raices complejas conjugadas",
+      "matchingError": [
+        {
+          "hint": "Debe seleccionar la alternativa correcta",
+          "error": ["*"],
+          "hintId": 3
+        }
+      ]
+    }
+  ]
+}

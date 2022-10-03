@@ -1,0 +1,35 @@
+{
+  "code": "fc4",
+  "title": "Factor común",
+  "contentType": "FC",
+  "level": "1",
+  "text": "Factorizar la siguiente expresión:",
+  "selectSteps": true,
+  "steps": [
+    {
+      "stepId": 0,
+      "expression": "12x+18y-24z",
+      "stepTitle": "Ingresar factor común: ",
+      "displayResult": "(2x+3y-4z)",
+      "KCs": [1],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Identificar los factores que se repitan en cada sumando de la expresión."
+        },
+        {
+          "hintId": 1,
+          "hint": "Un factor común es 3, pero la expresión todavía es factorizable."
+        },
+        { "hintId": 2, "hint": "El factor común de la expresión es 6." }
+      ],
+      "matchingError": [
+        { "error": [""], "hintId": 3, "hint": "No ha ingresado respuesta" }
+      ],
+      "answers": [{ "answer": "6", "nextStep": null }],
+      "incorrectMsg": "factor común incorrecto, ingrese el factor común correspondiente a la expresión dada",
+      "correctMsg": "Has encontrado el factor común",
+      "summary": "El factor común es el término que se encuentra en cada sumando y se puede factorizar. Así, la expresión puede ser representada por la multiplicación entre su factor común y nuevos sumandos. La nueva representación queda: "
+    }
+  ]
+}

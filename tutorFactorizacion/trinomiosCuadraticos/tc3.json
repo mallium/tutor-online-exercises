@@ -1,0 +1,192 @@
+{
+  "code": "tc3",
+  "title": "Trinomios cuadráticos.",
+  "contentType": "TC",
+  "level": "4",
+  "text": "Factorice la expresión de la forma: a(x - x₁)(x - x₂)",
+  "selectSteps": true,
+  "steps": [
+    {
+      "KCs": [4],
+      "hints": [
+        { "hint": "El valor de a es el coeficiente de x²", "hintId": 0 },
+        { "hint": "El valor de b es 4", "hintId": 1 },
+        { "hint": "a =5, b=4, c=-1", "hintId": 2 }
+      ],
+      "stepId": "0",
+      "answers": [{ "answer": ["5", "4", "-1"], "nextStep": "2" }],
+      "summary": "1) Para factorizar la expresión de la forma a(x - x₁)(x - x₂), es necesario determinar los valores de a, x₁ y x₂. Donde x₁, x₂ son las soluciones de la ecuación ax² + bx + c = 0. Por lo tanto, para llevar a cabo esta factorización, se debe identificar los valores de a, b y c.",
+      "stepTitle": "Identificar coeficientes a, b y c",
+      "correctMsg": "Haz identificado los valores de a, b y c",
+      "expression": "5x^2+4x-1",
+      "incorrectMsg": "no son los valores correspondientes a los valores a, b y c",
+      "displayResult": "a=5, b=4, c=-1",
+      "matchingError": [
+        {
+          "hint": "No ha ingresado respuesta",
+          "error": ["", "", ""],
+          "hintId": 3
+        },
+        {
+          "hint": "No ha ingresado el valor de a",
+          "error": ["", "*", "*"],
+          "hintId": 4
+        },
+        {
+          "hint": "No ha ingresado el valor de b",
+          "error": ["*", "", "*"],
+          "hintId": 5
+        },
+        {
+          "hint": "No ha ingresado el valor de c",
+          "error": ["*", "*", ""],
+          "hintId": 6
+        }
+      ]
+    },
+    {
+      "KCs": [5],
+      "hints": [
+        {
+          "hint": "Utilice la fórmula para calcular Δ usando los coeficientes de la expresión cuadrática",
+          "hintId": 0
+        },
+        {
+          "hint": "Reemplace en la fórmula Δ los valores de: a=5, b=4 y c=-1",
+          "hintId": 1
+        },
+        { "hint": "El valor del discriminante (Δ) es 36", "hintId": 2 }
+      ],
+      "stepId": "1",
+      "answers": [{ "answer": "36", "nextStep": "3" }],
+      "summary": "2) Ya con los valores de a, b y c se puede calcular x₁ y x₂ con la fórmula x₁ = (-b + √Δ)/2a, x₂ = (-b - √Δ)/2a. Entonces es necesario calcular el discriminante Δ=b²-4ac",
+      "stepTitle": "Calcular discriminante  Δ = b² - 4ac",
+      "correctMsg": "Haz calculado correctamente el discriminante",
+      "expression": "a=5, b=4, c=-1",
+      "incorrectMsg": "no se han ingresado correctamente el discriminante de la expresión",
+      "displayResult": "Δ=36",
+      "matchingError": [
+        { "hint": "No ha ingresado respuesta", "error": [""], "hintId": 3 }
+      ]
+    },
+    {
+      "KCs": [6],
+      "hints": [
+        {
+          "hint": "Recuerda que el discriminante determina si el trinomio tiene soluciones",
+          "hintId": 0
+        },
+        {
+          "hint": "Como el determinante es mayor a cero, ver a qué caso corresponde",
+          "hintId": 1
+        },
+        {
+          "hint": "Δ>0, por lo tanto este ejercicio posee dos raices reales diferentes",
+          "hintId": 2
+        }
+      ],
+      "stepId": "2",
+      "answers": [{ "answer": "1", "nextStep": "4" }],
+      "summary": "3) Si Δ>0 posee dos raices reales diferentes, si Δ=0 posee dos raices reales iguales y Δ<0 posee raices complejas conjugadas, aquí:",
+      "stepTitle": "¿A qué caso corresponde el discriminante?",
+      "correctMsg": "Haz descubierto a que caso corresponde el discriminante",
+      "expression": "Δ=36",
+      "incorrectMsg": "caso mal ingresado",
+      "displayResult": "Δ>0, por lo tanto este ejercicio posee dos raices reales diferentes",
+      "matchingError": [
+        {
+          "hint": "Debe seleccionar la alternativa correcta",
+          "error": ["*"],
+          "hintId": 3
+        }
+      ]
+    },
+    {
+      "KCs": [7],
+      "hints": [
+        {
+          "hint": "Reemplace los valores de a, b y Δ en la fórmula para calcular x₁ y x₂",
+          "hintId": 0
+        },
+        { "hint": "x₁= 1/5", "hintId": 1 },
+        { "hint": "El valor de x₁= 1/5 y x₂= -1", "hintId": 2 }
+      ],
+      "stepId": "3",
+      "answers": [{ "answer": ["1/5", "-1"], "nextStep": "5" }],
+      "formula": [
+        "x_{1}=\\frac{-b+\\sqrt{Δ}}{2a}",
+        "x_{2}=\\frac{-b-\\sqrt{Δ}}{2a}"
+      ],
+      "summary": "4) Obtenidos los valores de a, b y Δ se puede calcular x₁= (-b + √Δ)/2a y x₂= (-b - √Δ)/2a, entonces:",
+      "stepTitle": "Calcular raíces x₁ = (-b + √Δ)/2a, x₂ = (-b - √Δ)/2a ",
+      "correctMsg": "Haz encontrado las raices del polinomio",
+      "expression": "Δ = 36, a = 5, b = 4",
+      "incorrectMsg": "raices mal ingresadas",
+      "displayResult": "x_{1}=1/5, x_{2}=-1",
+      "matchingError": [
+        {
+          "hint": "No ha ingresado las raices",
+          "error": ["", ""],
+          "hintId": 3
+        },
+        {
+          "hint": "No ha ingresado la raíz x₁",
+          "error": ["", "*"],
+          "hintId": 4
+        },
+        {
+          "hint": "No ha ingresado la raíz x₂",
+          "error": ["*", ""],
+          "hintId": 5
+        }
+      ]
+    },
+    {
+      "KCs": [8],
+      "hints": [
+        {
+          "hint": "Reemplazar x-x₁ por el valor obtenido de x₁",
+          "hintId": 0
+        },
+        { "hint": "ingresar en x-x₁ el factor x-1/5", "hintId": 1 },
+        { "hint": "5(x-1/5)(x+1)", "hintId": 2 }
+      ],
+      "stepId": "4",
+      "answers": [
+        {
+          "answer": [
+            ["5", "x-1/5", "x+1"],
+            ["5", "x-(1/5)", "x+1"],
+            ["5", "x+1", "x-1/5"],
+            ["5", "x+1", "x-(1/5)"]
+          ],
+          "nextStep": null
+        }
+      ],
+      "summary": "5) Se completa la factorización de trinomios cuadráticos de la forma a(x-x₁)(x-x₂)",
+      "stepTitle": "Factorizar de la forma a(x - x₁)(x - x₂)",
+      "correctMsg": "Haz completado la factorización de trinomios cuadráticos correctamente",
+      "expression": "a=5, x_{1}=1/5, x_{2}=-1",
+      "incorrectMsg": "error en la factorización",
+      "displayResult": "5(x-1/5)(x+1)",
+      "matchingError": [
+        {
+          "hint": "No ha ingresado respuesta",
+          "error": ["", "", ""],
+          "hintId": 3
+        },
+        { "hint": "No ha ingresado a", "error": ["", "*", "*"], "hintId": 4 },
+        {
+          "hint": "No ha ingresado x - x₁",
+          "error": ["*", "", "*"],
+          "hintId": 5
+        },
+        {
+          "hint": "No ha ingresado x - x₂",
+          "error": ["*", "*", ""],
+          "hintId": 6
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "code": "fc7",
+  "title": "Factor común",
+  "contentType": "FC",
+  "level": "4",
+  "text": "Factorizar la siguiente expresión:",
+  "selectSteps": true,
+  "steps": [
+    {
+      "stepId": 0,
+      "expression": "6x^2yz-30xy^2z^2+12x^2y^2z^2",
+      "stepTitle": "Ingresar factor común: ",
+      "displayResult": "(x-5yz+2xyz)",
+      "KCs": [1],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Identificar los factores que se repitan en cada sumando de la expresión."
+        },
+        {
+          "hintId": 1,
+          "hint": "Un factor común es 6x, pero la expresión todavía es factorizable."
+        },
+        { "hintId": 2, "hint": "El factor común de la expresión es 6xyz." }
+      ],
+      "matchingError": [
+        { "error": [""], "hintId": 3, "hint": "No ha ingresado respuesta" },
+        {
+          "error": ["xyz"],
+          "hintId": 4,
+          "hint": "un factor común es y^5, pero no es el máximo factor común"
+        }
+      ],
+      "answers": [
+        { "answer": "6xyz", "nextStep": null },
+        { "answer": "6xzy", "nextStep": null },
+        { "answer": "6yxz", "nextStep": null },
+        { "answer": "6yzx", "nextStep": null },
+        { "answer": "6zxy", "nextStep": null },
+        { "answer": "6zyx", "nextStep": null }
+      ],
+      "incorrectMsg": "factor común incorrecto, ingrese el factor común correspondiente a la expresión dada",
+      "correctMsg": "Has encontrado el factor común",
+      "summary": "El factor común es el término que se encuentra en cada sumando y se puede factorizar. Así, la expresión puede ser representada por la multiplicación entre su factor común y nuevos sumandos. La nueva representación queda: "
+    }
+  ]
+}
