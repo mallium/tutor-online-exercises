@@ -64,7 +64,7 @@
       "stepId": "1",
       "expression": "(3a)^2+(4)^2",
       "stepTitle": "Ingresar suma por diferencia",
-      "displayResult": "x₁ = 3a², \\hspace{0.3cm} x₂=4",
+      "displayResult": "x₁ = 3a, \\hspace{0.3cm} x₂=4",
       "KCs": [4],
       "hints": [
         { "hintId": 0, "hint": "Primer paréntesis ingresar suma" },
