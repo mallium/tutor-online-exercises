@@ -1,0 +1,180 @@
+{
+  "code": "dc3",
+  "title": "Factorización por diferencia de cuadrados.",
+  "contentType": "DC",
+  "level": "1",
+  "text": "Factorice la siguiente expresión:",
+  "selectSteps": true,
+  "steps": [
+    {
+      "stepId": "0",
+      "expression": "9a^2-16",
+      "stepTitle": "Identificar terminos al cuadrado",
+      "displayResult": "(3a)^2-(4)^2",
+      "KCs": [3],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Calcular raices cuadradas de cada sumando"
+        },
+        {
+          "hintId": 1,
+          "hint": "x₁ es la raíz cuadrada del primer sumando"
+        },
+        {
+          "hintId": 2,
+          "hint": "los cuadrados son: (3a)^2 - (4)^2, donde los valores a ingresar son 3a y 4"
+        }
+      ],
+      "matchingError": [
+        {
+          "error": ["", ""],
+          "hintId": 3,
+          "hint": "No ha ingresado respuesta"
+        },
+        {
+          "error": ["", "*"],
+          "hintId": 4,
+          "hint": "No ha ingresado la primera raíz cuadrada"
+        },
+        {
+          "error": ["*", ""],
+          "hintId": 5,
+          "hint": "No ha ingresado la segunda raíz cuadrada"
+        }
+      ],
+      "answers": [
+        { "answer": ["3a", "4"], "nextStep": "1" },
+        { "answer": ["a3", "4"], "nextStep": "1" },
+
+        { "answer": ["-3a", "4"], "nextStep": "2" },
+        { "answer": ["-a3", "4"], "nextStep": "2" },
+
+        { "answer": ["3a", "-4"], "nextStep": "3" },
+        { "answer": ["a3", "-4"], "nextStep": "3" },
+
+        { "answer": ["-3a", "-4"], "nextStep": "4" },
+        { "answer": ["-a3", "-4"], "nextStep": "4" },
+      ],
+      "incorrectMsg": "no se han ingresado correctamente los términos que al cuadrado dan como resultado la expresión",
+      "correctMsg": "Haz encontrado los términos al cuadrado",
+      "summary": "1) Para aplicar factorización por diferencia de cuadrados, se deben identificar los términos que están al cuadrado de la forma (x₁)² - (x₂)², donde:"
+    },
+    {
+      "stepId": "1",
+      "expression": "(3a)^2+(4)^2",
+      "stepTitle": "Ingresar suma por diferencia",
+      "displayResult": "x₁ = 3a², \\hspace{0.3cm} x₂=4",
+      "KCs": [4],
+      "hints": [
+        { "hintId": 0, "hint": "Primer paréntesis ingresar suma" },
+        { "hintId": 1, "hint": "x₁ = 3a" },
+        { "hintId": 2, "hint": "(3a+4)(3a-4)" }
+      ],
+      "matchingError": [
+        {
+          "error": ["", ""],
+          "hintId": 3,
+          "hint": "No ha ingresado respuesta"
+        },
+        {
+          "error": ["", "*"],
+          "hintId": 4,
+          "hint": "No ha ingresado x₁ + x₂"
+        },
+        { "error": ["*", ""], "hintId": 5, "hint": "No ha ingresado x₁ - x₂" }
+      ],
+      "answers": [{ "answer": ["3a+4", "3a-4"], "nextStep": null }],
+      "incorrectMsg": "suma por diferencia mal ingresado",
+      "correctMsg": "Haz encontrado la diferencia de cuadradros",
+      "summary": "2) Ya identificado x₁ y x₂ se puede aplicar la fórmula que permite factorizar la expresión en suma por su diferencia  (x₁+x₂)(x₁-x₂)"
+    },
+    {
+      "stepId": "2",
+      "expression": "(-3a)^2+(4)^2",
+      "stepTitle": "Ingresar suma por diferencia",
+      "displayResult": "x₁ = -3a, \\hspace{0.3cm} x₂=4",
+      "KCs": [4],
+      "hints": [
+        { "hintId": 0, "hint": "Primer paréntesis ingresar suma" },
+        { "hintId": 1, "hint": "Segundo paréntesis ingresar resta" },
+        { "hintId": 2, "hint": "(-3a+4)(-3a-4)" }
+      ],
+      "matchingError": [
+        {
+          "error": ["", ""],
+          "hintId": 3,
+          "hint": "No ha ingresado respuesta"
+        },
+        {
+          "error": ["", "*"],
+          "hintId": 4,
+          "hint": "No ha ingresado x₁ + x₂"
+        },
+        { "error": ["*", ""], "hintId": 5, "hint": "No ha ingresado x₁ - x₂" }
+      ],
+      "answers": [{ "answer": ["-3a+4", "-3a-4"], "nextStep": null }],
+      "incorrectMsg": "suma por diferencia mal ingresado",
+      "correctMsg": "Haz encontrado la diferencia de cuadradros",
+      "summary": "2) Ya identificado x₁ y x₂ se puede aplicar la fórmula que permite factorizar la expresión en suma por su diferencia  (x₁+x₂)(x₁-x₂)"
+    },
+    {
+      "stepId": "3",
+      "expression": "(3a)^2+(-4)^2",
+      "stepTitle": "Ingresar suma por diferencia",
+      "displayResult": "x₁ = 3a, \\hspace{0.3cm} x₂=-4",
+      "KCs": [4],
+      "hints": [
+        { "hintId": 0, "hint": "Primer paréntesis ingresar resta" },
+        { "hintId": 1, "hint": "Segundo paréntesis ingresar suma" },
+        { "hintId": 2, "hint": "(3a-4)(3a+4)" }
+      ],
+      "matchingError": [
+        {
+          "error": ["", ""],
+          "hintId": 3,
+          "hint": "No ha ingresado respuesta"
+        },
+        {
+          "error": ["", "*"],
+          "hintId": 4,
+          "hint": "No ha ingresado x₁ + x₂"
+        },
+        { "error": ["*", ""], "hintId": 5, "hint": "No ha ingresado x₁ - x₂" }
+      ],
+      "answers": [{ "answer": ["3a-4", "3a+4"], "nextStep": null }],
+      "incorrectMsg": "suma por diferencia mal ingresado",
+      "correctMsg": "Haz encontrado la diferencia de cuadradros",
+      "summary": "2) Ya identificado x₁ y x₂ se puede aplicar la fórmula que permite factorizar la expresión en suma por su diferencia  (x₁+x₂)(x₁-x₂)"
+    },
+    {
+      "stepId": "4",
+      "expression": "(-3a)^2+(-4)^2",
+      "stepTitle": "Ingresar suma por diferencia",
+      "displayResult": "x₁ = -3a, \\hspace{0.3cm} x₂=-4",
+      "KCs": [4],
+      "hints": [
+        { "hintId": 0, "hint": "Primer paréntesis ingresar suma" },
+        { "hintId": 1, "hint": "Segundo paréntesis ingresar resta" },
+        { "hintId": 2, "hint": "(-3a+4)(-3a-4)" }
+      ],
+      "matchingError": [
+        {
+          "error": ["", ""],
+          "hintId": 3,
+          "hint": "No ha ingresado respuesta"
+        },
+        {
+          "error": ["", "*"],
+          "hintId": 4,
+          "hint": "No ha ingresado x₁ + x₂"
+        },
+        { "error": ["*", ""], "hintId": 5, "hint": "No ha ingresado x₁ - x₂" }
+      ],
+      "answers": [{ "answer": ["-3a+4", "-3a-4"], "nextStep": null }],
+      "incorrectMsg": "suma por diferencia mal ingresado",
+      "correctMsg": "Haz encontrado la diferencia de cuadradros",
+      "summary": "2) Ya identificado x₁ y x₂ se puede aplicar la fórmula que permite factorizar la expresión en suma por su diferencia  (x₁+x₂)(x₁-x₂)"
+    }
+  ]
+}
